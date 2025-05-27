@@ -3,23 +3,7 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* Deployment instructions  
 
 * ...
 
@@ -114,6 +98,11 @@ For all protected routes, add this HTTP header:
 Authorization: Bearer YOUR_JWT_TOKEN
 
 You get the token from the login response.
+
+    * Authentication test 
+
+    Create a GET request with  http://localhost:3000/auth_test 
+    Ufter createing a header Authentication with the JWT Token
 
 4. Working with Posts
 
