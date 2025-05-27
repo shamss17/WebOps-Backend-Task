@@ -124,6 +124,12 @@ GET /posts
 
 * Update Post
 
+{
+  "title": "First Post",
+  "body": "This post will auto-delete after 24h",
+  "tags": ["rails updated", "docker updated"]
+}
+
 PATCH /posts/:id — Only the post's author can edit.
 
 * Delete Post
@@ -147,6 +153,10 @@ Endpoint: POST /posts/:post_id/comments
 * Edit Comment
 
 PATCH /comments/:id — only comment's author can edit
+
+{
+  "body": "Not a Nice post!"
+}
 
 * Delete Comment
 
