@@ -3,11 +3,11 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
+* Ruby version: ruby 3.2.8
+
 * Deployment instructions  
 
-* ...
-
-* WebOps Backend Dev Task - Full Setup & Usage Guide 
+* * WebOps Backend Dev Task - Full Setup & Usage Guide 
 
 This is a full-featured Ruby on Rails API backend project for the WebOps Backend Developer task. It includes:
 
@@ -172,9 +172,20 @@ redis – For Sidekiq queueing
 
 sidekiq – Background job processor
 
-* .env File (Optional)
 
-You can configure database and redis URLs in .env, or use Docker’s environment defaults.
+* * Running Tests
+
+1. Make sure your Docker containers are up:
+
+docker-compose up -d
+
+2. Run RSpec inside the web service container:
+
+docker-compose exec web bundle exec rspec
+
+You should see output like:
+
+15 examples, 0 failures, 9 pending
 
 
 * Author
